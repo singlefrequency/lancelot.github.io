@@ -1,0 +1,68 @@
+form {
+  width: 100%;
+  
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1em 0.5em;
+  border-radius: 2px;
+  border: 1px solid #145289;
+}
+
+textarea {
+  min-height: 10em;
+  resize: none;
+  padding: 0.5em;
+}
+
+form h4 {
+  margin-bottom: 0.25em;
+}
+
+.send {
+  margin: 1em 0;
+}
+
+/* Page Layout */
+
+.content {
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-content: stretch;
+  
+}
+
+.text {
+  width: 45%;
+  margin: 0;
+}
+
+.padder {
+  margin-top: 1em;
+  border-left: 1px solid black;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .text {
+    width: 100%;
+  }
+
+  .padder {
+    margin: 1em 0;
+    border-left: none;
+    border-bottom: 1px solid black;
+  }
+}
